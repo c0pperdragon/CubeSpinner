@@ -1,0 +1,11 @@
+vmthread MAIN
+{   
+	DATAS   dirname 100
+	FILENAME(GET_FOLDERNAME,100,dirname)
+	DATAS   progname 200
+	STRINGS(ADD,dirname,'/spinnermain.rbf',progname);	
+	DATA32 status
+ 	SYSTEM(progname, status)		
+}
+
+	
